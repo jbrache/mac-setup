@@ -94,12 +94,12 @@ brew install --cask google-chrome
 ### Browser Extensions
 This can get bloated very quickly and I am trying to stick with the bare minimum here. These extension are compatible across the both the browsers
 #### Password Manager
-[KeePassXC](https://keepassxc.org/download/#macos) - https://keepassxc.org
-1Password - https://1password.com/
+* [KeePassXC](https://keepassxc.org/download/#macos) - https://keepassxc.org
+* 1Password - https://1password.com/
 #### AdBlocker
-ublock Origin lite - https://ublockorigin.com/
+* ublock Origin lite - https://ublockorigin.com/
 #### Privacy
-Privacy Badger - https://privacybadger.org/
+* Privacy Badger - https://privacybadger.org/
 
 
 ## Containers
