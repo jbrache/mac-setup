@@ -158,12 +158,19 @@ ollama --version
 ```
 Run a model locally
 ```
-ollama pull llama3.2
-ollama run llama3.2
+ollama serve
+# Gemma4 Latest
+ollama pull gemma4:latest
+ollama run gemma4:latest
+
+# LLama
+# ollama pull llama3.2
+# ollama run llama3.2
 ```
 ### WebUI
 Sometimes you need a UI. Open WebUI supports Ollama and OpenAI-compatible APIs (so you can point it at local or remote model servers).
 ```
+orb start
 docker pull ghcr.io/open-webui/open-webui:main
 docker run -d -p 3000:8080 \
   -v open-webui:/app/backend/data \
@@ -190,6 +197,7 @@ brew install --cask visual-studio-code
 - Jupyter (Microsoft)
 - Remote SSH
 - AWS (Amazon)
+- Claude Code for VS Code
 - MCP
 ### Agentic
 #### Kiro
@@ -207,10 +215,21 @@ curl -fsSL https://claude.ai/install.sh | bash
 
 ### Cloud Development
 #### AWS Setup
-Eventually you will run out of local resources and will need to scale to the cloud, and again in 2026 the leader here is still AWS with a very generous free tier. Install the AWS CLI and setup a default profile
+Eventually you will run out of local resources and will need to scale to the cloud. Install the AWS CLI and setup a default profile
 ```
 curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg
 sudo installer -pkg AWSCLIV2.pkg -target /
+```
+#### GCP Setup
+Eventually you will run out of local resources and will need to scale to the cloud. Install the GCP gcloud CLI
+```
+brew update && brew install --cask gcloud-cli
+# To use additional binary components installed via gcloud, add the "/opt/homebrew/share/google-cloud-sdk/bin"
+# directory to your PATH environment variable, e.g., (for Bash shell):
+#    export PATH=/opt/homebrew/share/google-cloud-sdk/bin:"$PATH"
+
+gcloud auth login
+gcloud auth application-default login
 ```
 
 ### Version Control
@@ -243,7 +262,6 @@ uv tool install ruff@latest
 
 ### Jupyter Notebook & Kernels
 Love them or hate them, you will need to work with these. My way of managing these is via the individual project environments and `uv` An example workflow below
-
 ```
 mkdir myproj && cd myproj
 uv init
@@ -256,11 +274,6 @@ If you like reactive notebooks and “git-friendly” workflows, I recently disc
 uv tool install marimo
 marimo tutorial
 ```
-
-
-
-
-
 
 ## Database
 ### DuckDB
@@ -276,6 +289,7 @@ Local vector DB. Add via `uv` inside your projects
 ```
 uv add chromadb
 ```
+
 ### Redis
 NoSQL cache DB
 ```
