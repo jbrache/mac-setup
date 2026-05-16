@@ -134,6 +134,8 @@ PyTorch’s **MPS backend** lets you run on the Apple GPU by moving tensors/mode
 
 Install in your project via `uv`
 ```
+mkdir mytorchproj && cd mytorchproj
+uv init --python 3.12
 uv add torch torchvision torchaudio
 ```
 Minimal MPS test:
@@ -272,6 +274,8 @@ uv run --with jupyter jupyter lab
 If you like reactive notebooks and “git-friendly” workflows, I recently discovered marimo
 ```
 uv tool install marimo
+# To use installed tools, run `export PATH="/Users/josebrache/.local/bin:$PATH"` or `uv tool update-shell`.
+uv tool update-shell
 marimo tutorial
 ```
 
