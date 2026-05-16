@@ -60,6 +60,12 @@ echo 'eval "$(mise activate zsh)"' >> ~/.zshrc
 source ~/.zshrc
 ```
 
+### uv
+Install UV - Extremely fast Python package installer and resolver, written in Rust
+```
+brew install uv
+```
+
 ### ffmpeg
 Command line video processing including things such as increasing video speed, adding images to videos and merging videos
 ```
