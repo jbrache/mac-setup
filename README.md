@@ -16,19 +16,14 @@ A lot of packages have additional dependencies so update xcode before anything e
 xcode-select --install
 ```
 
-### mise
-Install and active mise - the package manager for your dev tools
-
-```
-brew install mise
-echo 'eval "$(mise activate zsh)"' >> ~/.zshrc
-source ~/.zshrc
-```
-
 ## Terminal
 ### Ghostty
 In 2025, I switched from iTerm to Ghostty. It's fast, lightweight and has everything I need without the distractions.
 You can install it via the universal binary @ - https://ghostty.org/download or a community maintained package via homebrew
+```
+brew install --cask ghostty
+open /Applications/Ghostty.app 
+```
 ### Powerline Fonts
 Optional, I like it for my CLI use
 ```
@@ -55,6 +50,14 @@ Profiles -> Text -> Font `Melso LG S DZ Powerline` Regular 14
 Despite tabs and terminal splits, I still find myself using tmux, specially useful for running things in the background
 ```
 brew install tmux
+```
+
+### mise
+Install and active mise - the package manager for your dev tools
+```
+brew install mise
+echo 'eval "$(mise activate zsh)"' >> ~/.zshrc
+source ~/.zshrc
 ```
 
 ### ffmpeg
