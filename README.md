@@ -88,12 +88,12 @@ brew install --cask google-chrome
 ### Browser Extensions
 This can get bloated very quickly and I am trying to stick with the bare minimum here. These extension are compatible across the both the browsers
 #### Password Manager
-Lastpass - https://www.lastpass.com/
+[KeePassXC](https://keepassxc.org/download/#macos) - https://keepassxc.org
+1Password - https://1password.com/
 #### AdBlocker
 ublock Origin lite - https://ublockorigin.com/
 #### Privacy
 Privacy Badger - https://privacybadger.org/
-
 
 
 ## Containers
@@ -106,8 +106,8 @@ docker run --rm hello-world
 
 ## Mac Tools 
 All optional, but these are make quality of life improvements for me on the Mac
-### Dropbox
-Something to backup and sync, by choice is dropbox but you can use what you like. Install via the the official dropbox site 
+### Google Drive
+Something to backup and sync, by choice is Google Drive but you can use what you like.
 ### Obsidian - The second brain 🧠
 Completely optional and personal, but Obsidian is the one place I do everything. From notes to task/project management, wireframe diagrams, knowledge base and even my shopping list. Everything that is important, eventually goes in here. It's free , open source and does not have any proprietary format - just uses markdown. Install via here - https://obsidian.md/
 #### Essential plugins
